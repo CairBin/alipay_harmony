@@ -18,10 +18,10 @@ struct MainPage{
   //customer navigate style
   @Builder
   tabStyle(text:string, img:Resource, selectedImg:Resource, selected:number){
-    Column({ space: 2 }){
+    Column({ space: 3 }){
       Image(this.currentIndex === selected ? selectedImg : img)
-        .width(30)  // unit: vp (self-adaption)
-        .height(30)
+        .width(31)  // unit: vp (self-adaption)
+        .height(31)
 
       Text(text)
         .fontSize(15)
